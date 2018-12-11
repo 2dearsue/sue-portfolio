@@ -128,24 +128,24 @@
   color: white;
   position: absolute;
   top: 4vw;
-  right: 0vw;
+  right: 0.5vw;
   opacity: 0.9;
 }
 
 ul {
   text-align: right;
   position: absolute;
-  top: 5vw;
-  right: 6vw;
-  line-height: 1.1;
+  top: 4.5vw;
+  right: 4.5vw;
+  line-height: 1.3;
 }
 
 li {
   list-style-type: none;
   font-family: "Titillium Web", sans-serif;
   color: white;
-  font-size: 2vw;
-  letter-spacing: 0.8vw;
+  font-size: 1.5vw;
+  letter-spacing: 0.9vw;
 }
 
 img {
@@ -154,6 +154,7 @@ img {
 }
 
 .intro {
+  font-size: 2vw;
   position: absolute;
   top: 15vw;
   left: 20vw;
@@ -167,14 +168,20 @@ img {
   letter-spacing: 0.8vw;
 }
 
-p:nth-of-type(2) {
+.intro p:nth-of-type(2) {
   letter-spacing: 2vw;
   font-size: 4vw;
 }
 
-p:nth-of-type(3) {
-  font-size: 2vw;
+.intro .sub {
+  position: absolute;
+  top: 23w;
+  right: -20vw;
+  transform: rotate(-15deg);
+  color: Teal;
   text-transform: lowercase;
+  font-size: 3vw;
+  letter-spacing: 0.1vw;
 }
 
 .white1,
@@ -205,7 +212,7 @@ p:nth-of-type(3) {
   top: 18vw;
   left: 45vw;
   z-index: 99;
-  border-left: 1.3px solid grey;
+  border-left: 2px solid Gold;
   transform: rotate(-22deg);
   height: 40vw;
   width: 40vw;
