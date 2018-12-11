@@ -1,5 +1,212 @@
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.hamburger:hover {
+  opacity: 0.7;
+}
+
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: white;
+}
+
+.hamburger-box {
+  width: 30px;
+  height: 21px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -1.5px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 30px;
+  height: 3px;
+  background-color: grey;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+
+.hamburger-inner::before {
+  top: -9px;
+}
+
+.hamburger-inner::after {
+  bottom: -9px;
+}
+
+/*
+   * Squeeze
+   */
+.hamburger--squeeze .hamburger-inner {
+  transition-duration: 0.075s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--squeeze .hamburger-inner::before {
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+
+.hamburger--squeeze .hamburger-inner::after {
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner {
+  transform: rotate(45deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+
+.hamburger--squeeze.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.logo {
+  font-family: "Shadows Into Light", cursive;
+  text-transform: uppercase;
+  letter-spacing: 1.5vw;
+  font-size: 5vw;
+  letter-spacing: 0.5vw;
+  color: Gold;
+  position: absolute;
+  top: 2vw;
+  left: 6vw;
+  text-shadow: 0.2vw 0.2vw grey;
+}
+
+.hamburger {
+  color: white;
+  position: absolute;
+  top: 4vw;
+  right: 0vw;
+  opacity: 0.9;
+}
+
+ul {
+  text-align: right;
+  position: absolute;
+  top: 5vw;
+  right: 6vw;
+  line-height: 1.1;
+}
+
+li {
+  list-style-type: none;
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+  font-size: 2vw;
+  letter-spacing: 0.8vw;
+}
+
+img {
+  height: 50vw;
+  width: 100%;
+}
+
+.intro {
+  position: absolute;
+  top: 15vw;
+  left: 20vw;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: white;
+  height: 40vw;
+  padding-right: 2vw;
+  padding-top: 2vw;
+  letter-spacing: 0.8vw;
+}
+
+p:nth-of-type(2) {
+  letter-spacing: 2vw;
+  font-size: 4vw;
+}
+
+p:nth-of-type(3) {
+  font-size: 2vw;
+  text-transform: lowercase;
+}
+
+.white1,
+.white2 {
+  background-color: white;
+  position: absolute;
+  z-index: 99;
+}
+
+.white1 {
+  height: 13vw;
+  width: 50vw;
+  transform: rotate(18deg);
+  top: 42vw;
+  left: -10vw;
+}
+
+.white2 {
+  height: 43vw;
+  width: 70vw;
+  transform: rotate(-14deg);
+  top: 40vw;
+  left: 42vw;
+}
+
+.border1 {
+  position: absolute;
+  top: 18vw;
+  left: 45vw;
+  z-index: 99;
+  border-left: 1.3px solid grey;
+  transform: rotate(-22deg);
+  height: 40vw;
+  width: 40vw;
 }
