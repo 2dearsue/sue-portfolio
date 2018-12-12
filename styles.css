@@ -1,10 +1,3 @@
-/*!
- * Hamburgers
- * @description Tasty CSS-animated hamburgers
- * @author Jonathan Suh @jonsuh
- * @site https://jonsuh.com/hamburgers
- * @link https://github.com/jonsuh/hamburgers
- */
 .hamburger {
   display: inline-block;
   cursor: pointer;
@@ -105,6 +98,13 @@
   transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
 * {
   margin: 0;
   padding: 0;
@@ -115,48 +115,52 @@
   font-family: "Shadows Into Light", cursive;
   text-transform: uppercase;
   letter-spacing: 1.5vw;
-  font-size: 5vw;
+  font-size: 4vw;
   letter-spacing: 0.5vw;
   color: Gold;
   position: absolute;
   top: 2vw;
-  left: 6vw;
+  left: 4vw;
   text-shadow: 0.2vw 0.2vw grey;
 }
 
 .hamburger {
   color: white;
   position: absolute;
-  top: 4vw;
-  right: 0.5vw;
+  top: 2vw;
+  right: 4vw;
   opacity: 0.9;
 }
 
 ul {
   text-align: right;
   position: absolute;
-  top: 4.5vw;
-  right: 4.5vw;
+  top: 1.3vw;
+  right: 8vw;
   line-height: 1.3;
+  background-color: white;
+  padding: 1vw 2vw;
+  transform: rotate(-10deg);
 }
 
 li {
   list-style-type: none;
   font-family: "Titillium Web", sans-serif;
-  color: white;
+  color: Teal;
   font-size: 1.5vw;
-  letter-spacing: 0.9vw;
+  letter-spacing: 0.2vw;
 }
 
-img {
+.bg {
   height: 50vw;
   width: 100%;
+  z-index: -99;
 }
 
 .intro {
   font-size: 2vw;
   position: absolute;
-  top: 15vw;
+  top: 25vw;
   left: 20vw;
   font-family: "Titillium Web", sans-serif;
   text-transform: uppercase;
@@ -173,26 +177,29 @@ img {
   font-size: 4vw;
 }
 
-.intro .sub {
+.sub {
   position: absolute;
-  top: 23w;
-  right: -20vw;
-  transform: rotate(-15deg);
+  top: 47vw;
+  right: 30vw;
+  font-family: "Shadows Into Light", cursive;
+  transform: rotate(-25deg);
   color: Teal;
   text-transform: lowercase;
-  font-size: 3vw;
+  font-size: 4vw;
   letter-spacing: 0.1vw;
+  z-index: 3;
+  text-shadow: 0.1vw 0.1vw grey;
 }
 
 .white1,
 .white2 {
   background-color: white;
   position: absolute;
-  z-index: 99;
+  overflow-x: hidden;
 }
 
 .white1 {
-  height: 13vw;
+  height: 43vw;
   width: 50vw;
   transform: rotate(18deg);
   top: 42vw;
@@ -200,20 +207,108 @@ img {
 }
 
 .white2 {
-  height: 43vw;
-  width: 70vw;
+  height: 42vw;
+  width: 85vw;
   transform: rotate(-14deg);
   top: 40vw;
-  left: 42vw;
+  left: 33vw;
+  overflow-x: hidden;
 }
 
 .border1 {
   position: absolute;
   top: 18vw;
   left: 45vw;
-  z-index: 99;
   border-left: 2px solid Gold;
-  transform: rotate(-22deg);
-  height: 40vw;
-  width: 40vw;
+  border-bottom: 2px solid Gold;
+  transform: rotate(-30deg);
+  height: 27vw;
+  width: 60vw;
+  z-index: 99;
+}
+
+.aboutMe {
+  position: absolute;
+  width: 63vw;
+  display: flex;
+}
+
+.strip {
+  width: 15vw;
+  position: relative;
+  top: 24vw;
+  left: 81vw;
+  transform: rotate(10deg);
+  z-index: 2;
+  box-shadow: 2px 2px 0.4 grey;
+}
+
+.strip2 {
+  left: 52vw;
+  top: 26vw;
+  transform: rotate(-10deg);
+}
+
+article {
+  background: Teal;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  position: relative;
+  top: 2vw;
+  right: -27vw;
+  z-index: 1;
+  width: 38vw;
+  padding: 4vw 2vw;
+  text-align: right;
+  align-self: flex-end;
+}
+
+.text {
+  text-align: left;
+}
+
+.headline {
+  position: relative;
+  font-size: 3vw;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 0.3vw;
+  z-index: 1000;
+}
+
+.text {
+  font-size: 1.5vw;
+  background-color: white;
+  color: Teal;
+}
+
+.border2 {
+  height: 15vw;
+  left: -24vw;
+  top: 71vw;
+  transform: scaleX(-1) rotate(-10deg);
+  overflow-x: hidden;
+}
+
+.btn {
+  padding: 0.5vw;
+  border: 1px solid Gold;
+  border-radius: 0.3vw;
+  margin-top: 1vw;
+}
+
+.skills {
+  height: 60vw;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+i {
+  position: relative;
+  top: 30vw;
+  font-size: 8vw;
 }
