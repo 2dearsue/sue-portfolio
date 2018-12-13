@@ -28,8 +28,8 @@
 }
 
 .hamburger-box {
-  width: 30px;
-  height: 21px;
+  width: 35px;
+  height: 24px;
   display: inline-block;
   position: relative;
 }
@@ -37,13 +37,13 @@
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -1.5px;
+  margin-top: -2px;
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 30px;
-  height: 3px;
-  background-color: white;
+  width: 35px;
+  height: 4px;
+  background-color: grey;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -57,11 +57,11 @@
 }
 
 .hamburger-inner::before {
-  top: -9px;
+  top: -10px;
 }
 
 .hamburger-inner::after {
-  bottom: -9px;
+  bottom: -10px;
 }
 
 /*
@@ -146,6 +146,12 @@ nav .logo {
 nav .hamburger {
   margin-right: 5vw;
   margin-left: 3vw;
+  z-index: 1000;
+  position: relative;
+}
+
+nav .hamburger:focus {
+  outline: none;
 }
 
 nav .nav-list {
@@ -161,9 +167,17 @@ nav .nav-list {
   transform: rotate(-10deg);
 }
 
-nav .nav-list li:hover {
-  border-bottom: 1px solid Gold;
-  cursor: pointer;
+nav .nav-list span:nth-of-type(1) {
+  height: 2px;
+  width: 11vw;
+  background-color: Gold;
+  position: absolute;
+  left: -2vw;
+}
+
+nav .nav-list span:nth-of-type(1):hover {
+  width: 11vw;
+  transition: width 0.8s ease-in;
 }
 
 .intro {
@@ -290,21 +304,21 @@ nav .nav-list li:hover {
   margin-top: 1vw;
 }
 
-.strips {
+.strip1 {
   position: relative;
-  top: -30vw;
-  left: 40vw;
-}
-
-.strip {
-  width: 12vw;
-  transform: rotate(10deg);
+  top: -23vw;
+  left: 70vw;
+  width: 14vw;
+  transform: rotate(-18deg);
   z-index: 2;
-  box-shadow: 2px 2px 0.4 grey;
 }
 
 .strip2 {
-  transform: rotate(-10deg);
+  width: 16vw;
+  position: relative;
+  top: -33vw;
+  left: 48vw;
+  transform: rotate(-2deg);
 }
 
 .skills {

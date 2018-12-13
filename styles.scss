@@ -1,6 +1,7 @@
 @import 'colors';
 @import 'fonts';
 @import 'hamburgers';
+// @import 'aos';
 
 * {
   margin: 0;
@@ -42,6 +43,12 @@ nav {
   .hamburger {
     margin-right: 5vw;
     margin-left: 3vw;
+    z-index: 1000;
+    position: relative;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   .nav-list {
@@ -57,11 +64,17 @@ nav {
     padding: 1vw 1vw;
     transform: rotate(-10deg);
 
-    li {
+    span:nth-of-type(1) {
+      height: 2px;
+      width: 11vw;
+      background-color: $gold;
+      position: absolute;
+      left: -2vw;
+
       &:hover {
-        border-bottom: 1px solid $gold;
-        cursor: pointer;
-      }
+        width: 11vw;
+        transition: width 0.8s ease-in;
+        }
     }
   }
 }
@@ -198,21 +211,21 @@ nav {
   }
 }
 
-.strips {
+.strip1 {
   position: relative;
-  top: -30vw;
-  left: 40vw;
-}
-
-.strip {
-  width: 12vw;
-  transform: rotate(10deg);
+  top: -23vw;
+  left: 70vw;
+  width: 14vw;
+  transform: rotate(-18deg);
   z-index: 2;
-  box-shadow: 2px 2px 0.4 grey;
 }
 
 .strip2 {
-  transform: rotate(-10deg);
+  width: 16vw;
+  position: relative;
+  top: -33vw;
+  left: 48vw;
+  transform: rotate(-2deg);
 }
 
 .skills {

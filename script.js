@@ -1,5 +1,7 @@
-$().ready(ev => {
-  $(`button`).click(ev => {
-    this.toggle(`is-active`);
+$(document).ready(function(ev) {
+      console.log("hey");
+  $(".btn").click(function(ev) {
+    $(this).toggleClass(`is-active`);
+
   })
 })
