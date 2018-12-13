@@ -114,7 +114,7 @@
 .bg {
   position: absolute;
   top: 0;
-  height: 100%;
+  height: 200%;
   width: 105%;
   z-index: -999;
 }
@@ -218,16 +218,19 @@ nav .nav-list li:hover {
   left: 13vw;
 }
 
-.aboutMe .border1 {
+.aboutMe .border {
   position: relative;
-  top: 13vw;
-  left: 44vw;
   border-left: 2px solid Gold;
   border-bottom: 2px solid Gold;
+  z-index: 99;
+}
+
+.aboutMe .border1 {
+  top: 13vw;
+  left: 44vw;
   transform: rotate(-30deg);
   height: 18vw;
   width: 60vw;
-  z-index: 99;
 }
 
 .aboutMe .flexbox {
@@ -253,7 +256,8 @@ nav .nav-list li:hover {
   font-size: 3vw;
   color: Teal;
   text-shadow: 1px 1px grey;
-  transform: rotate(-20deg);
+  transform: rotate(-26deg);
+  margin-left: 1vw;
 }
 
 .aboutMe .headline {
@@ -264,6 +268,7 @@ nav .nav-list li:hover {
   font-family: "Titillium Web", sans-serif;
   letter-spacing: 0.3vw;
   z-index: 1000;
+  margin-bottom: 1vw;
 }
 
 .aboutMe .sub-text {
@@ -300,4 +305,88 @@ nav .nav-list li:hover {
 
 .strip2 {
   transform: rotate(-10deg);
+}
+
+.skills {
+  margin: 0 auto;
+  height: 50vw;
+  width: 80%;
+}
+
+.skills .icons {
+  color: Teal;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills .icons i {
+  text-shadow: grey;
+  margin: 2vw;
+  font-size: 4vw;
+  z-index: 4;
+}
+
+.skills .icons span {
+  color: white;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 6vw;
+  letter-spacing: 0.5vw;
+  opacity: 0.6;
+  position: relative;
+  top: -3vw;
+}
+
+.skills .icons span:nth-of-type(2) {
+  font-size: 4vw;
+  top: -2vw;
+}
+
+.skills .icons span:nth-of-type(3) {
+  font-size: 6vw;
+  top: -3vw;
+}
+
+.skills .icons span:nth-of-type(4) {
+  font-size: 4vw;
+  top: -2vw;
+}
+
+.skills .icons span:nth-of-type(5) {
+  font-size: 5vw;
+  top: -2vw;
+}
+
+.skills article.text {
+  font-family: "Titillium Web", sans-serif;
+  background-color: transparent;
+  color: Teal;
+  align-self: flex-end;
+  text-align: left;
+  margin-left: 30vw;
+  margin-right: 20vw;
+}
+
+.skills .border2 {
+  position: relative;
+  border-right: 2px solid Gold;
+  border-top: 2px solid Gold;
+  top: -30vw;
+  left: -50vw;
+  transform: rotate(40deg);
+  height: 60vw;
+  width: 60vw;
+  z-index: 999;
+}
+
+.skills .title-skills {
+  position: relative;
+  top: 13vw;
+  right: -3vw;
+  width: 30vw;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 5vw;
+  color: Teal;
+  text-shadow: 1px 1px grey;
+  transform: rotate(35deg);
 }
