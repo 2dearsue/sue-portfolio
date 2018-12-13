@@ -43,7 +43,7 @@
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 30px;
   height: 3px;
-  background-color: grey;
+  background-color: white;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -111,163 +111,152 @@
   box-sizing: border-box;
 }
 
-.logo {
+.bg {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 105%;
+  z-index: -999;
+}
+
+body {
+  background-image: url(../img/background-1921589_1920.jpg);
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .logo {
+  color: Gold;
   font-family: "Shadows Into Light", cursive;
-  text-transform: uppercase;
-  letter-spacing: 1.5vw;
   font-size: 4vw;
   letter-spacing: 0.5vw;
-  color: Gold;
-  position: absolute;
-  top: 2vw;
-  left: 4vw;
   text-shadow: 0.2vw 0.2vw grey;
+  text-transform: uppercase;
+  flex-grow: 3;
+  margin: 4vw 5vw;
 }
 
-.hamburger {
-  color: white;
-  position: absolute;
-  top: 2vw;
-  right: 4vw;
-  opacity: 0.9;
+nav .hamburger {
+  margin-right: 5vw;
+  margin-left: 3vw;
 }
 
-ul {
-  text-align: right;
-  position: absolute;
-  top: 1.3vw;
-  right: 8vw;
-  line-height: 1.3;
+nav .nav-list {
   background-color: white;
-  padding: 1vw 2vw;
+  color: Teal;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.5vw;
+  letter-spacing: 0.2vw;
+  line-height: 1.3;
+  list-style-type: none;
+  margin-top: 2vw;
+  padding: 1vw 1vw;
   transform: rotate(-10deg);
 }
 
-li {
-  list-style-type: none;
-  font-family: "Titillium Web", sans-serif;
-  color: Teal;
-  font-size: 1.5vw;
-  letter-spacing: 0.2vw;
-}
-
-.bg {
-  height: 50vw;
-  width: 100%;
-  z-index: -99;
+nav .nav-list li:hover {
+  border-bottom: 1px solid Gold;
+  cursor: pointer;
 }
 
 .intro {
-  font-size: 2vw;
-  position: absolute;
-  top: 25vw;
-  left: 20vw;
   font-family: "Titillium Web", sans-serif;
   text-transform: uppercase;
   line-height: 1.2;
+  font-size: 2vw;
+  position: relative;
+  top: 0;
+  left: 0;
   color: white;
   height: 40vw;
-  padding-right: 2vw;
-  padding-top: 2vw;
   letter-spacing: 0.8vw;
 }
 
-.intro p:nth-of-type(2) {
+.intro .name {
+  position: relative;
+  top: 21vw;
+  left: 24vw;
+}
+
+.intro .name p:nth-of-type(2) {
   letter-spacing: 2vw;
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
-.sub {
+.aboutMe .elements {
   position: absolute;
-  top: 47vw;
-  right: 30vw;
-  font-family: "Shadows Into Light", cursive;
-  transform: rotate(-25deg);
-  color: Teal;
-  text-transform: lowercase;
-  font-size: 4vw;
-  letter-spacing: 0.1vw;
-  z-index: 3;
-  text-shadow: 0.1vw 0.1vw grey;
+  top: 0;
 }
 
-.white1,
-.white2 {
+.aboutMe .white1,
+.aboutMe .white2 {
   background-color: white;
   position: absolute;
   overflow-x: hidden;
 }
 
-.white1 {
-  height: 43vw;
-  width: 50vw;
-  transform: rotate(18deg);
-  top: 42vw;
-  left: -10vw;
+.aboutMe .white1 {
+  height: 48vw;
+  width: 87vw;
+  transform: rotate(4deg);
+  top: 36vw;
+  left: -64vw;
 }
 
-.white2 {
-  height: 42vw;
-  width: 85vw;
-  transform: rotate(-14deg);
-  top: 40vw;
-  left: 33vw;
-  overflow-x: hidden;
+.aboutMe .white2 {
+  height: 45vw;
+  width: 75vw;
+  transform: rotate(-10deg);
+  top: 34vw;
+  left: 13vw;
 }
 
-.border1 {
-  position: absolute;
-  top: 18vw;
-  left: 45vw;
+.aboutMe .border1 {
+  position: relative;
+  top: 13vw;
+  left: 44vw;
   border-left: 2px solid Gold;
   border-bottom: 2px solid Gold;
   transform: rotate(-30deg);
-  height: 27vw;
+  height: 18vw;
   width: 60vw;
   z-index: 99;
 }
 
-.aboutMe {
-  position: absolute;
-  width: 63vw;
+.aboutMe .flexbox {
   display: flex;
+  margin: 0 15vw;
 }
 
-.strip {
-  width: 15vw;
-  position: relative;
-  top: 24vw;
-  left: 81vw;
-  transform: rotate(10deg);
-  z-index: 2;
-  box-shadow: 2px 2px 0.4 grey;
-}
-
-.strip2 {
-  left: 52vw;
-  top: 26vw;
-  transform: rotate(-10deg);
-}
-
-article {
+.aboutMe article {
   background: Teal;
   color: white;
   font-family: "Titillium Web", sans-serif;
-  position: relative;
-  top: 2vw;
-  right: -27vw;
   z-index: 1;
-  width: 38vw;
   padding: 4vw 2vw;
   text-align: right;
-  align-self: flex-end;
 }
 
-.text {
-  text-align: left;
+.aboutMe .title-about {
+  position: relative;
+  top: -8vw;
+  left: 50vw;
+  width: 30vw;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 3vw;
+  color: Teal;
+  text-shadow: 1px 1px grey;
+  transform: rotate(-20deg);
 }
 
-.headline {
+.aboutMe .headline {
   position: relative;
   font-size: 3vw;
   color: white;
@@ -277,38 +266,38 @@ article {
   z-index: 1000;
 }
 
-.text {
+.aboutMe .sub-text {
   font-size: 1.5vw;
-  background-color: white;
+}
+
+.aboutMe .text {
+  background-color: transparent;
   color: Teal;
+  align-self: flex-end;
+  text-align: left;
+  margin-right: 15vw;
 }
 
-.border2 {
-  height: 15vw;
-  left: -24vw;
-  top: 71vw;
-  transform: scaleX(-1) rotate(-10deg);
-  overflow-x: hidden;
-}
-
-.btn {
+.aboutMe .btn {
   padding: 0.5vw;
   border: 1px solid Gold;
   border-radius: 0.3vw;
   margin-top: 1vw;
 }
 
-.skills {
-  height: 80vw;
+.strips {
+  position: relative;
+  top: -30vw;
+  left: 40vw;
 }
 
-.icons {
-  position: relative;
-  top: -17vw;
-  display: flex;
-  flex-direction: column;
-  margin-left: 10vw;
-  font-size: 5vw;
-  color: Teal;
-  text-shadow: 1px 1px white;
+.strip {
+  width: 12vw;
+  transform: rotate(10deg);
+  z-index: 2;
+  box-shadow: 2px 2px 0.4 grey;
+}
+
+.strip2 {
+  transform: rotate(-10deg);
 }
