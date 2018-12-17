@@ -1,3 +1,4 @@
+@import url(/node_modules/aos/dist/aos.css);
 .hamburger {
   display: inline-block;
   cursor: pointer;
@@ -133,6 +134,9 @@ nav {
 }
 
 nav .logo {
+  position: relative;
+  top: -4vw;
+  left: 4vw;
   color: Gold;
   font-family: "Shadows Into Light", cursive;
   font-size: 4vw;
@@ -140,7 +144,7 @@ nav .logo {
   text-shadow: 0.2vw 0.2vw grey;
   text-transform: uppercase;
   flex-grow: 3;
-  margin: 4vw 5vw;
+  transform: rotate(-10deg);
 }
 
 nav .hamburger {
@@ -155,6 +159,8 @@ nav .hamburger:focus {
 }
 
 nav .nav-list {
+  position: relative;
+  z-index: 1000;
   background-color: white;
   color: Teal;
   font-family: "Titillium Web", sans-serif;
@@ -167,20 +173,27 @@ nav .nav-list {
   transform: rotate(-10deg);
 }
 
-nav .nav-list span:nth-of-type(1) {
+nav .nav-list .l1:hover,
+nav .nav-list .l2:hover,
+nav .nav-list .l3:hover {
+  cursor: pointer;
+  color: Gold;
+}
+
+nav .nav-list span {
+  width: 0vw;
+}
+
+nav .nav-list .visible {
   height: 2px;
   width: 11vw;
   background-color: Gold;
   position: absolute;
   left: -2vw;
-}
-
-nav .nav-list span:nth-of-type(1):hover {
-  width: 11vw;
   transition: width 0.8s ease-in;
 }
 
-.intro {
+div.name {
   font-family: "Titillium Web", sans-serif;
   text-transform: uppercase;
   line-height: 1.2;
@@ -191,15 +204,12 @@ nav .nav-list span:nth-of-type(1):hover {
   color: white;
   height: 40vw;
   letter-spacing: 0.8vw;
-}
-
-.intro .name {
   position: relative;
   top: 21vw;
   left: 24vw;
 }
 
-.intro .name p:nth-of-type(2) {
+div.name p:nth-of-type(2) {
   letter-spacing: 2vw;
   font-size: 5vw;
 }

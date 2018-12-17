@@ -3,16 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Sues Portfolio Website</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script> -->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|East+Sea+Dokdo|Kristi|Lato:300,400,900|Permanent+Marker|Playfair+Display:400,700|Prata|Rock+Salt|Shadows+Into+Light|Sue+Ellen+Francisco|Titillium+Web:300,400,900|Ubuntu:400,400i,500,700|Vidaloka" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
-        <script src="script.js" charset="utf-8"></script>
   </head>
 
   <body>
@@ -21,12 +15,12 @@
       <h3 class=logo>sue</h3>
 
       <ul class="nav-list">
-        <li>about me</li>
-        <span></span>
-        <li>skills</li>
-        <span></span>
-        <li>contact</li>
-        <span></span>
+        <li class="l1">about me</li>
+        <span id="1" class="visible"></span>
+        <li class="l2">skills</li>
+        <span id="2"></span>
+        <li class="l3">contact</li>
+        <span id="3"></span>
       </ul>
 
       <button class="btn hamburger hamburger--squeeze" type="button">
@@ -36,14 +30,15 @@
       </button>
     </nav>
 
-    <section class="intro">
-        <div class="name">
-          <p>Susanne</p>
-          <p>Schütt</p>
-        </div>
-    </section>
+
+    <div class="name">
+      <p>Susanne</p>
+      <p>Schütt</p>
+    </div>
+
 
     <section class="aboutMe">
+
       <div class="elements">
         <div class="white1"></div>
         <div class="white2"></div>
@@ -90,13 +85,21 @@
 
       <article class="text">
         Despite of a big love for past times, my nostalgic side does not stop me from
-        following the path into future times. In order to express my creative pushes in the world wide web. Stress resistent I am able to work independently as well as I am happy to be
+        following the path into future times. In order to express my creative pushes in the world wide web.
+        I amStress resistent I am able to work independently as well as I am happy to be
         part of a productive team.<br>
       </article>
 
       <div class="border border2"></div>
     </section>
 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+          AOS.init();
+      </script>
+      <script src="script.js" charset="utf-8"></script>
 
   </body>
 </html>
