@@ -8,6 +8,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: $Teal;
 }
 
 .bg {
@@ -41,7 +47,6 @@ nav {
     text-shadow: 0.2vw 0.2vw grey;
     text-transform: uppercase;
     flex-grow: 3;
-    // margin: 1vw 1vw;
     transform: rotate(-10deg);
   }
 
@@ -70,30 +75,29 @@ nav {
     padding: 1vw 1vw;
     transform: rotate(-10deg);
 
+    span {
+      width: 0vw;
+    }
+
     .l1,
     .l2,
     .l3 {
       &:hover {
         cursor: pointer;
         color: $gold;
+
+        span {
+          height: 2px;
+          width: 11vw;
+          background-color: $gold;
+          position: absolute;
+          left: -2vw;
+          transition: width 0.8s ease-in;
+        }
       }
-    }
-
-    span {
-      width: 0vw;
-    }
-
-    .visible {
-      height: 2px;
-      width: 11vw;
-      background-color: $gold;
-      position: absolute;
-      left: -2vw;
-      transition: width 0.8s ease-in;
     }
   }
 }
-
 
   div.name {
     font-family: $titillium;
@@ -122,7 +126,8 @@ nav {
 
   .elements {
     position: absolute;
-    top: 0;
+    top: 5vw;
+    z-index: -99;
   }
 
   .white1,
@@ -136,7 +141,7 @@ nav {
     height: 48vw;
     width: 87vw;
     transform: rotate(4deg);
-    top: 36vw;
+    top: 40vw;
     left: -64vw;
   }
 
@@ -144,7 +149,7 @@ nav {
     height: 45vw;
     width: 75vw;
     transform: rotate(-10deg);
-    top: 34vw;
+    top: 36vw;
     left: 13vw;
     // overflow-x: hidden;
   }
@@ -157,16 +162,16 @@ nav {
   }
 
   .border1 {
-    top: 13vw;
-    left: 44vw;
+    top: 7vw;
+    left: 25vw;
     transform: rotate(-30deg);
-    height: 18vw;
-    width: 60vw;
+    height: 25vw;
+    width: 70vw;
   }
 
   .flexbox {
     display: flex;
-    margin: 0 15vw;
+    margin: 10vw 15vw;
   }
 
 
@@ -181,8 +186,8 @@ nav {
 
   .title-about{
     position: relative;
-    top: -8vw;
-    left: 50vw;
+    top: 0vw;
+    left: 35vw;
     width: 30vw;
     font-family: $shadows;
     font-size: 3vw;
@@ -213,8 +218,6 @@ nav {
     color: $Teal;
     align-self: flex-end;
     text-align:left;
-    margin-right: 15vw;
-    // flex-grow: 4;
   }
 
   .btn {
@@ -227,26 +230,24 @@ nav {
 
 .strip1 {
   position: relative;
-  top: -23vw;
-  left: 70vw;
+  top: -50vw;
+  left: 57vw;
   width: 14vw;
-  transform: rotate(-18deg);
-  z-index: 2;
+  transform: rotate(10deg);
 }
 
 .strip2 {
-  width: 16vw;
   position: relative;
-  top: -33vw;
-  left: 48vw;
+  top: -48vw;
+  left: 27vw;
+  width: 15vw;
   transform: rotate(-2deg);
 }
 
 .skills {
   margin: 0 auto;
-  height: 50vw;
-  width: 80%;
-  // border: 1px solid white;
+  height: auto;
+  width: 100%;
 
   .icons {
   color: $Teal;
@@ -317,8 +318,8 @@ nav {
 
   .title-skills {
     position: relative;
-    top: 13vw;
-    right: -3vw;
+    top: 53vw;
+    left: 7vw;
     width: 30vw;
     font-family: $shadows;
     font-size: 5vw;

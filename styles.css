@@ -110,6 +110,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: Teal;
 }
 
 .bg {
@@ -173,6 +179,10 @@ nav .nav-list {
   transform: rotate(-10deg);
 }
 
+nav .nav-list span {
+  width: 0vw;
+}
+
 nav .nav-list .l1:hover,
 nav .nav-list .l2:hover,
 nav .nav-list .l3:hover {
@@ -180,11 +190,9 @@ nav .nav-list .l3:hover {
   color: Gold;
 }
 
-nav .nav-list span {
-  width: 0vw;
-}
-
-nav .nav-list .visible {
+nav .nav-list .l1:hover span,
+nav .nav-list .l2:hover span,
+nav .nav-list .l3:hover span {
   height: 2px;
   width: 11vw;
   background-color: Gold;
@@ -216,7 +224,8 @@ div.name p:nth-of-type(2) {
 
 .aboutMe .elements {
   position: absolute;
-  top: 0;
+  top: 5vw;
+  z-index: -99;
 }
 
 .aboutMe .white1,
@@ -230,7 +239,7 @@ div.name p:nth-of-type(2) {
   height: 48vw;
   width: 87vw;
   transform: rotate(4deg);
-  top: 36vw;
+  top: 40vw;
   left: -64vw;
 }
 
@@ -238,7 +247,7 @@ div.name p:nth-of-type(2) {
   height: 45vw;
   width: 75vw;
   transform: rotate(-10deg);
-  top: 34vw;
+  top: 36vw;
   left: 13vw;
 }
 
@@ -250,16 +259,16 @@ div.name p:nth-of-type(2) {
 }
 
 .aboutMe .border1 {
-  top: 13vw;
-  left: 44vw;
+  top: 7vw;
+  left: 25vw;
   transform: rotate(-30deg);
-  height: 18vw;
-  width: 60vw;
+  height: 25vw;
+  width: 70vw;
 }
 
 .aboutMe .flexbox {
   display: flex;
-  margin: 0 15vw;
+  margin: 10vw 15vw;
 }
 
 .aboutMe article {
@@ -273,8 +282,8 @@ div.name p:nth-of-type(2) {
 
 .aboutMe .title-about {
   position: relative;
-  top: -8vw;
-  left: 50vw;
+  top: 0vw;
+  left: 35vw;
   width: 30vw;
   font-family: "Shadows Into Light", cursive;
   font-size: 3vw;
@@ -304,7 +313,6 @@ div.name p:nth-of-type(2) {
   color: Teal;
   align-self: flex-end;
   text-align: left;
-  margin-right: 15vw;
 }
 
 .aboutMe .btn {
@@ -316,25 +324,24 @@ div.name p:nth-of-type(2) {
 
 .strip1 {
   position: relative;
-  top: -23vw;
-  left: 70vw;
+  top: -50vw;
+  left: 57vw;
   width: 14vw;
-  transform: rotate(-18deg);
-  z-index: 2;
+  transform: rotate(10deg);
 }
 
 .strip2 {
-  width: 16vw;
   position: relative;
-  top: -33vw;
-  left: 48vw;
+  top: -48vw;
+  left: 27vw;
+  width: 15vw;
   transform: rotate(-2deg);
 }
 
 .skills {
   margin: 0 auto;
-  height: 50vw;
-  width: 80%;
+  height: auto;
+  width: 100%;
 }
 
 .skills .icons {
@@ -405,8 +412,8 @@ div.name p:nth-of-type(2) {
 
 .skills .title-skills {
   position: relative;
-  top: 13vw;
-  right: -3vw;
+  top: 53vw;
+  left: 7vw;
   width: 30vw;
   font-family: "Shadows Into Light", cursive;
   font-size: 5vw;

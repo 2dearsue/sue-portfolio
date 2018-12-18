@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
+    <!-- <script src="http://www.yoursite.com/somewhere/on/your/webserver/jquery-scrollto/vendor/jquery.js"></script>
+    <script src="http://www.yoursite.com/somewhere/on/your/webserver/jquery-scrollto/lib/jquery-scrollto.js"></script> -->
   </head>
 
   <body>
     <!-- <img class="bg" src="../img/background-1921589_1920.jpg"> -->
-    <nav>
+    <nav id="scrollto1">
       <h3 class=logo>sue</h3>
 
       <ul class="nav-list">
-        <li class="l1">about me</li>
-        <span id="1" class="visible"></span>
-        <li class="l2">skills</li>
+        <a href="#scrollto2"><li class="l1">about me</li></a>
+        <span id="1"></span>
+        <a href="#scrollto3"><li class="l2">skills</li></a>
         <span id="2"></span>
         <li class="l3">contact</li>
         <span id="3"></span>
@@ -30,22 +32,21 @@
       </button>
     </nav>
 
+    <section class="intro">
+      <div class="name">
+        <p>Susanne</p>
+        <p>Schütt</p>
+      </div>
+    </section>
 
-    <div class="name">
-      <p>Susanne</p>
-      <p>Schütt</p>
-    </div>
-
-
-    <section class="aboutMe">
+    <section class="aboutMe" id="scrollto2">
+      <p class="title-about">About Me</p>
 
       <div class="elements">
         <div class="white1"></div>
         <div class="white2"></div>
         <div class="border border1"></div>
       </div>
-
-      <p class="title-about">About Me</p>
 
       <div class="flexbox">
         <article class="sub-text">
@@ -61,45 +62,46 @@
       </div>
     </section>
 
-    <img class="strip1" src="../img/sue2.png" alt="">
-    <img class="strip2" src="../img/sue1.png" alt="">
 
-    <section class="skills">
-      <div class="icons">
-        <i class="fab fa-html5"></i>
-        <i class="fab fa-css3"></i>
-        <i class="fab fa-sass"></i>
-        <i class="fab fa-js"></i>
-        <i class="fab fa-adobe"></i>
-      </div>
+  <section class="skills" id="scrollto3">
+    <p class="title-skills">skills</p>
 
-      <div class="icons">
-        <span>99%</span>
-        <span>89%</span>
-        <span>75%</span>
-        <span>69%</span>
-        <span>90%</span>
-      </div>
+      <img class="strip1" src="../img/sue2.png" alt="">
+      <img class="strip2" src="../img/sue1.png" alt="">
 
-      <p class="title-skills">skills</p>
+    <div class="icons">
+      <i class="fab fa-html5"></i>
+      <i class="fab fa-css3"></i>
+      <i class="fab fa-sass"></i>
+      <i class="fab fa-js"></i>
+      <i class="fab fa-adobe"></i>
+    </div>
 
-      <article class="text">
-        Despite of a big love for past times, my nostalgic side does not stop me from
-        following the path into future times. In order to express my creative pushes in the world wide web.
-        I amStress resistent I am able to work independently as well as I am happy to be
-        part of a productive team.<br>
-      </article>
+    <div class="icons">
+      <span>99%</span>
+      <span>89%</span>
+      <span>75%</span>
+      <span>69%</span>
+      <span>90%</span>
+    </div>
+
+    <article class="text">
+      Despite of a big love for past times, my nostalgic side does not stop me from
+      following the path into future times. In order to express my creative pushes in the world wide web.
+      I amStress resistent I am able to work independently as well as I am happy to be
+      part of a productive team.<br>
+    </article>
 
       <div class="border border2"></div>
-    </section>
+  </section>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-          AOS.init();
-      </script>
-      <script src="script.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+  <script src="script.js" charset="utf-8"></script>
 
   </body>
 </html>
