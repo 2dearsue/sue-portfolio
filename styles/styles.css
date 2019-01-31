@@ -121,8 +121,8 @@ a {
 .bg {
   position: absolute;
   top: 0;
-  height: 200%;
-  width: 105%;
+  height: 100vw;
+  width: 100vw;
   z-index: -999;
 }
 
@@ -180,25 +180,17 @@ nav .nav-list {
 }
 
 nav .nav-list span {
+  height: 0.1vw;
   width: 0vw;
-}
-
-nav .nav-list .l1:hover,
-nav .nav-list .l2:hover,
-nav .nav-list .l3:hover {
-  cursor: pointer;
-  color: Gold;
-}
-
-nav .nav-list .l1:hover span,
-nav .nav-list .l2:hover span,
-nav .nav-list .l3:hover span {
-  height: 2px;
-  width: 11vw;
   background-color: Gold;
   position: absolute;
   left: -2vw;
-  transition: width 0.8s ease-in;
+  transition: width 0.4s ease-in;
+}
+
+nav .nav-list a:hover {
+  cursor: pointer;
+  color: Gold;
 }
 
 div.name {
@@ -206,9 +198,6 @@ div.name {
   text-transform: uppercase;
   line-height: 1.2;
   font-size: 2vw;
-  position: relative;
-  top: 0;
-  left: 0;
   color: white;
   height: 40vw;
   letter-spacing: 0.8vw;
@@ -268,7 +257,7 @@ div.name p:nth-of-type(2) {
 
 .aboutMe .flexbox {
   display: flex;
-  margin: 10vw 15vw;
+  margin: 5vw 15vw;
 }
 
 .aboutMe article {
@@ -323,17 +312,11 @@ div.name p:nth-of-type(2) {
 }
 
 .strip1 {
-  position: relative;
-  top: -50vw;
-  left: 57vw;
   width: 14vw;
   transform: rotate(10deg);
 }
 
 .strip2 {
-  position: relative;
-  top: -48vw;
-  left: 27vw;
   width: 15vw;
   transform: rotate(-2deg);
 }

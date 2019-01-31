@@ -6,23 +6,31 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|East+Sea+Dokdo|Kristi|Lato:300,400,900|Permanent+Marker|Playfair+Display:400,700|Prata|Rock+Salt|Shadows+Into+Light|Sue+Ellen+Francisco|Titillium+Web:300,400,900|Ubuntu:400,400i,500,700|Vidaloka" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="styles.css">
-    <!-- <script src="http://www.yoursite.com/somewhere/on/your/webserver/jquery-scrollto/vendor/jquery.js"></script>
-    <script src="http://www.yoursite.com/somewhere/on/your/webserver/jquery-scrollto/lib/jquery-scrollto.js"></script> -->
+    <link rel="stylesheet" href="./styles.css">
   </head>
 
   <body>
-    <!-- <img class="bg" src="../img/background-1921589_1920.jpg"> -->
+
     <nav id="scrollto1">
       <h3 class=logo>sue</h3>
 
       <ul class="nav-list">
-        <a href="#scrollto2"><li class="l1">about me</li></a>
-        <span id="1"></span>
-        <a href="#scrollto3"><li class="l2">skills</li></a>
-        <span id="2"></span>
-        <li class="l3">contact</li>
-        <span id="3"></span>
+        <a href="#scrollto2">
+          <li class="l1">about me</li>
+        </a>
+        <span class="hover" id="1"></span>
+        <a href="#scrollto3">
+          <li class="l2">skills</li>
+        </a>
+        <span class="hover" id="2"></span>
+        <a href="#scrollto3">
+          <li class="l3">projects</li>
+        </a>
+        <span class="hover" id="3"></span>
+        <a href="#scrollto3">
+          <li class="l4">contact</li>
+        </a>
+        <span class="hover" id="4"></span>
       </ul>
 
       <button class="btn hamburger hamburger--squeeze" type="button">
@@ -49,10 +57,15 @@
       </div>
 
       <div class="flexbox">
+
         <article class="sub-text">
           <p class="headline">Hello, I am Sue. </p>
           I am a higly motivated Frontend-Developer with a great passion for music, film & photography.
         </article>
+
+      <div class="">
+        <img class="strip1" src="../img/sue2.png" alt="">
+        <img class="strip2" src="../img/sue1.png" alt="">
 
         <article class="text">
           Despite of a big love for past times, my nostalgic side does not stop me from
@@ -60,21 +73,19 @@
           part of a productive team.<br>
         </article>
       </div>
+
+      </div>
     </section>
 
 
   <section class="skills" id="scrollto3">
     <p class="title-skills">skills</p>
 
-      <img class="strip1" src="../img/sue2.png" alt="">
-      <img class="strip2" src="../img/sue1.png" alt="">
-
     <div class="icons">
       <i class="fab fa-html5"></i>
       <i class="fab fa-css3"></i>
       <i class="fab fa-sass"></i>
       <i class="fab fa-js"></i>
-      <i class="fab fa-adobe"></i>
     </div>
 
     <div class="icons">
@@ -82,7 +93,6 @@
       <span>89%</span>
       <span>75%</span>
       <span>69%</span>
-      <span>90%</span>
     </div>
 
     <article class="text">
@@ -101,7 +111,7 @@
     <script>
         AOS.init();
     </script>
-  <script src="script.js" charset="utf-8"></script>
+  <script src="../script.js" charset="utf-8"></script>
 
   </body>
 </html>

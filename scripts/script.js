@@ -7,35 +7,41 @@ $(document).ready(function(ev) {
         $(this).toggleClass(`is-active`);
       }
     )
+  });
 
-    $("a>.l1").click(
-      function(ev) {
-        $("span#2").removeClass(`visible`);
-        $("span#3").removeClass(`visible`);
-        $("span#1").toggleClass(`visible`);
-      };
-    )
+//TESTING WITH UNDERLINE / LINKS IN NAV:
 
-    $("a.l2").click(
-      function(ev) {
-        $("span#1").removeClass(`visible`);
-        $("span#3").removeClass(`visible`);
-        $("span#2").toggleClass(`visible`);
-      };
-    )
+$("a").mouseover (function(ev) {
+  ev.stopPropagation();
+  $("ul>span").css("width", "0");
+  $(this).next().css("width", "9vw");
+})
 
-    $(".l3").click(
-      function(ev) {
-        $("span#2").removeClass(`visible`);
-        $("span#1").removeClass(`visible`);
-        $("span#3").toggleClass(`visible`);
-      };
-    )
-
-  }
-);
-
+// $("a>.l1").click(
+//   function(ev) {
+//     $("span#2").removeClass(`visible`);
+//     $("span#3").removeClass(`visible`);
+//     $("span#1").toggleClass(`visible`);
+//   };
+// )
 //
+// $("a.l2").click(
+//   function(ev) {
+//     $("span#1").removeClass(`visible`);
+//     $("span#3").removeClass(`visible`);
+//     $("span#2").toggleClass(`visible`);
+//   };
+// )
+//
+// $(".l3").click(
+//   function(ev) {
+//     $("span#2").removeClass(`visible`);
+//     $("span#1").removeClass(`visible`);
+//     $("span#3").toggleClass(`visible`);
+//   };
+// )
+
+
 // /// AOS - part
 // AOS.init();
 //
