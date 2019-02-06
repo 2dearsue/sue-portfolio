@@ -1,19 +1,28 @@
+// main scss to be compiled
+
 @import 'colors';
 @import 'fonts';
 @import 'hamburgers';
+@import 'nav';
 @import '/node_modules/aos/dist/aos.css';
 
-
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 a {
-  text-decoration: none;
-  color: $Teal;
+  text-decoration: none !important;
+    color: $Teal !important;
+
+  &:hover,
+  &:focus {
+    text-decoration: none !important;
+  }
+}
+
+li {
+  list-style-type: none !important;
 }
 
 .bg {
@@ -26,76 +35,6 @@ a {
 
 body {
   background-image: url(../img/background-1921589_1920.jpg);
-}
-
-nav {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: space-around;
-
-  .logo {
-    position: relative;
-    top: -4vw;
-    left: 4vw;
-    color: $gold;
-    font-family: $shadows;
-    font-size: 4vw;
-    letter-spacing: 0.5vw;
-    text-shadow: 0.2vw 0.2vw grey;
-    text-transform: uppercase;
-    flex-grow: 3;
-    transform: rotate(-10deg);
-  }
-
-  .hamburger {
-    margin-right: 5vw;
-    margin-left: 3vw;
-    z-index: 1000;
-    position: relative;
-
-    &:focus {
-      outline: none;
-    }
-  }
-
-  .nav-list {
-    position: relative;
-    z-index: 1000;
-    background-color: white;
-    color: $Teal;
-    font-family: $titillium;
-    font-size: 1.5vw;
-    letter-spacing: 0.2vw;
-    line-height: 1.3;
-    list-style-type: none;
-    margin-top: 2vw;
-    padding: 1vw 1vw;
-    transform: rotate(-10deg);
-
-  span {
-    height: 0.1vw;
-    width: 0vw;
-    background-color: $gold;
-    position: absolute;
-    left: -2vw;
-    transition: width 0.4s ease-in;
-  }
-
-    a {
-      &:hover {
-        cursor: pointer;
-        color: $gold;
-      //
-      // ~ span {
-      //     width: 11vw
-      //   }
-
-      }
-    }
-  }
 }
 
   div.name {
@@ -215,12 +154,12 @@ nav {
     text-align:left;
   }
 
-  .btn {
-    padding: 0.5vw;
-    border: 1px solid $gold;
-    border-radius: 0.3vw;
-    margin-top: 1vw;
-  }
+  // .btn {
+  //   padding: 0.5vw;
+  //   border: 1px solid $gold;
+  //   border-radius: 0.3vw;
+  //   margin-top: 1vw;
+  // }
 }
 
 .strip1 {
@@ -251,36 +190,36 @@ nav {
     z-index: 4;
     }
 
-  span {
-    color: white;
-    text-align: center;
-    font-family: $titillium;
-    font-size: 6vw;
-    letter-spacing: 0.5vw;
-    opacity: 0.6;
-    position: relative;
-    top: -3vw;
-
-    &:nth-of-type(2) {
-      font-size: 4vw;
-      top: -2vw;
-      }
-
-    &:nth-of-type(3) {
-      font-size: 6vw;
-      top: -3vw;
-      }
-
-    &:nth-of-type(4) {
-      font-size: 4vw;
-      top: -2vw;
-      }
-
-    &:nth-of-type(5) {
-      font-size: 5vw;
-      top: -2vw;
-        }
-    }
+  // span {
+  //   color: white;
+  //   text-align: center;
+  //   font-family: $titillium;
+  //   font-size: 6vw;
+  //   letter-spacing: 0.5vw;
+  //   opacity: 0.6;
+  //   position: relative;
+  //   top: -3vw;
+  //
+  //   &:nth-of-type(2) {
+  //     font-size: 4vw;
+  //     top: -2vw;
+  //     }
+  //
+  //   &:nth-of-type(3) {
+  //     font-size: 6vw;
+  //     top: -3vw;
+  //     }
+  //
+  //   &:nth-of-type(4) {
+  //     font-size: 4vw;
+  //     top: -2vw;
+  //     }
+  //
+  //   &:nth-of-type(5) {
+  //     font-size: 5vw;
+  //     top: -2vw;
+  //       }
+  //   }
   }
 
   article.text {

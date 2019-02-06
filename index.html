@@ -6,76 +6,92 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|East+Sea+Dokdo|Kristi|Lato:300,400,900|Permanent+Marker|Playfair+Display:400,700|Prata|Rock+Salt|Shadows+Into+Light|Sue+Ellen+Francisco|Titillium+Web:300,400,900|Ubuntu:400,400i,500,700|Vidaloka" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
   </head>
 
-  <body>
+<body>
 
-    <nav id="scrollto1">
-      <h3 class=logo>sue</h3>
-
-      <ul class="nav-list">
-        <a href="#scrollto2">
-          <li class="l1">about me</li>
-        </a>
-        <span class="hover" id="1"></span>
-        <a href="#scrollto3">
-          <li class="l2">skills</li>
-        </a>
-        <span class="hover" id="2"></span>
-        <a href="#scrollto3">
-          <li class="l3">projects</li>
-        </a>
-        <span class="hover" id="3"></span>
-        <a href="#scrollto3">
-          <li class="l4">contact</li>
-        </a>
-        <span class="hover" id="4"></span>
-      </ul>
-
-      <button class="btn hamburger hamburger--squeeze" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-    </nav>
-
-    <section class="intro">
-      <div class="name">
-        <p>Susanne</p>
-        <p>Schütt</p>
-      </div>
-    </section>
-
-    <section class="aboutMe" id="scrollto2">
-      <p class="title-about">About Me</p>
-
-      <div class="elements">
-        <div class="white1"></div>
-        <div class="white2"></div>
-        <div class="border border1"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-10">
+        <h3 class="logo" id="scrollto1">sue</h3>
       </div>
 
-      <div class="flexbox">
-
-        <article class="sub-text">
-          <p class="headline">Hello, I am Sue. </p>
-          I am a higly motivated Frontend-Developer with a great passion for music, film & photography.
-        </article>
-
-      <div class="">
-        <img class="strip1" src="../img/sue2.png" alt="">
-        <img class="strip2" src="../img/sue1.png" alt="">
-
-        <article class="text">
-          Despite of a big love for past times, my nostalgic side does not stop me from
-          following the path into future times. In order to express my creative pushes in the world wide web. Stress resistent I am able to work independently as well as I am happy to be
-          part of a productive team.<br>
-        </article>
+      <div class="col-xs-2">
+        <button class="col-4 btn hamburger hamburger--squeeze pull-right" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner">
+            </span>
+          </span>
+        </button>
       </div>
+    </div>
+  </div>
 
-      </div>
-    </section>
+  <nav class="navbar navbar-expand-sm">
+    <ul class="container navbar-nav">
+      <li class="row nav-item text-center hidden-lg hidden-md hidden-xs">
+        <div class="col-sm-6">
+          <a href="#scrollto2">about me</a>
+          <span class="hover" id="2"></span>
+        </div>
+
+        <div class="col-sm-4">
+          <a href="#scrollto3">skills</a>
+          <span class="hover" id="3"></span>
+        </div>
+
+        <div class="col-sm-6">
+          <a href="#scrollto4">contact</a>
+          <span class="hover" id="4"></span>
+        </div>
+
+        <div class="col-sm-6">
+          <a href="#scrollto5">download CV</a>
+          <span class="hover" id="5"></span>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+
+  <!-- <section class="intro">
+    <div class="name">
+      <p>Susanne</p>
+      <p>Schütt</p>
+    </div>
+  </section>
+
+  <section class="aboutMe" id="scrollto2">
+    <p class="title-about">About Me</p>
+
+    <div class="elements">
+      <div class="white1"></div>
+      <div class="white2"></div>
+      <div class="border border1"></div>
+    </div>
+
+    <div class="flexbox">
+
+      <article class="sub-text">
+        <p class="headline">Hello, I am Sue. </p>
+        I am a higly motivated Frontend-Developer with a great passion for music, film & photography.
+      </article>
+
+    <div class="">
+      <img class="strip1" src="../img/sue2.png" alt="">
+      <img class="strip2" src="../img/sue1.png" alt="">
+
+      <article class="text">
+        Despite of a big love for past times, my nostalgic side does not stop me from
+        following the path into future times. In order to express my creative pushes in the world wide web. Stress resistent I am able to work independently as well as I am happy to be
+        part of a productive team.<br>
+      </article>
+    </div>
+
+    </div>
+  </section>
 
 
   <section class="skills" id="scrollto3">
@@ -105,13 +121,17 @@
       <div class="border border2"></div>
   </section>
 
+    <section class="skills" id="scrollto4">
+
+
+    </section> -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-  <script src="../script.js" charset="utf-8"></script>
+  <script src="../scripts/script.js" charset="utf-8"></script>
 
   </body>
 </html>

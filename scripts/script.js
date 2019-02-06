@@ -1,46 +1,23 @@
 $(document).ready(function(ev) {
 
 // HAMBURGER BUTTON:
-    $(".btn").click(
-      function(ev) {
-        // console.log("hey2");
-        $(this).toggleClass(`is-active`);
+  $(".btn").click(
+    function(ev) {
+      // console.log("hey2");
+      $(this).toggleClass(`is-active`);
+      $(".nav-item").toggleClass("hidden-xs");
       }
-    )
-  });
+    );
 
-//TESTING WITH UNDERLINE / LINKS IN NAV:
+    //TESTING WITH UNDERLINE / LINKS IN NAV:
 
-$("a").mouseover (function(ev) {
-  ev.stopPropagation();
-  $("ul>span").css("width", "0");
-  $(this).next().css("width", "9vw");
-})
+    $("a").mouseover (function(ev) {
+      ev.stopPropagation();
+      $("div>span").css("width", "0");
+      $(this).next().css("width", "35vw");
+    });
 
-// $("a>.l1").click(
-//   function(ev) {
-//     $("span#2").removeClass(`visible`);
-//     $("span#3").removeClass(`visible`);
-//     $("span#1").toggleClass(`visible`);
-//   };
-// )
-//
-// $("a.l2").click(
-//   function(ev) {
-//     $("span#1").removeClass(`visible`);
-//     $("span#3").removeClass(`visible`);
-//     $("span#2").toggleClass(`visible`);
-//   };
-// )
-//
-// $(".l3").click(
-//   function(ev) {
-//     $("span#2").removeClass(`visible`);
-//     $("span#1").removeClass(`visible`);
-//     $("span#3").toggleClass(`visible`);
-//   };
-// )
-
+});
 
 // /// AOS - part
 // AOS.init();

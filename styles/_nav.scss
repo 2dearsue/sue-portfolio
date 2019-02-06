@@ -1,0 +1,55 @@
+.logo {
+  margin-top: 0;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.2vw 0.2vw grey;
+  text-transform: uppercase;
+  transform: rotate(-10deg);
+  color: $gold;
+  font-family: $shadows;
+}
+
+.hamburger {
+  margin-top: 5vw;
+  color: white;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.nav-item {
+  background-color: white;
+  height: auto;
+  margin: 3vw;
+  padding: 1vw;
+
+  > div {
+     > a {
+      font-family: $titillium;
+      font-size: 1.5rem;
+      letter-spacing: 0.2rem;
+      line-height: 1.3;
+      list-style-type: none;
+
+      &:hover {
+        cursor: pointer;
+        color: $gold !important;
+
+      span {
+        width: 35vw;
+        }
+      }
+    }
+
+    > span {
+      height: 0.3vw;
+      width: 0vw;
+      background-color: Gold;
+      position: absolute;
+      left: 24vw;
+      top: 4vw;
+      transition: width 0.4s ease-in;
+    }
+  }
+}
